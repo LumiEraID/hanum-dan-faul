@@ -88,8 +88,12 @@ backface-visibility: hidden;
 /* ============ COVER ============== */
 #cover{
     position:fixed;
-    inset:0;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+
     width:100%;
+    max-width:430px;
     height:100vh;
 
     background: transparent;
@@ -104,7 +108,7 @@ backface-visibility: hidden;
 
     color:#fff;
     z-index:9999;
-    overflow: hidden;
+    overflow:hidden;
     transition:opacity 0.6s ease;
 }
 
